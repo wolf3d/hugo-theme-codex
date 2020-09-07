@@ -29,6 +29,29 @@
   }
 }
 
+.splash-b {
+  h1 {
+    font-size: 3em;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    font-weight: 500;
+    line-height: 1.25;
+    max-width: 22em;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    margin-top: 1rem; // reduce margin top due to social icons' padding
+    color: #111;
+    max-width: 34rem;
+  }
+}
+
 .fancy {
   color: $primary;
 }
