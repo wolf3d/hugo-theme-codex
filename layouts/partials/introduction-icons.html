@@ -1,0 +1,13 @@
+{{ $currentPage := . }}
+{{ $icons := .Site.Params.iconOrder | default (slice "person" "terminal" "personalpage" "cpu") }}
+
+
+  {{ range $icons }}
+<div class="introduction-icons">
+    {{ $icon := anchorize . }}
+    {{ if isset $currentPage.Site.Params $icon }}
+    <div class="introduction-icons__icon" style="background-image: url('{{print "svg/" $icon ".svg" | absURL}}')"></div>
+    <p>{{ index $currentPage.Site.Params $icon }}</p>
+    {{ end }}
+    </div>
+  {{ end }}

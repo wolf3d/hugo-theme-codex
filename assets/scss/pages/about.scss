@@ -31,6 +31,7 @@
 
 
 .splash-b {
+  max-width: 55em;
   h1 {
     font-size: 3em;
     line-height: 1;
@@ -44,12 +45,13 @@
     line-height: 1.25;
     max-width: 22em;
     letter-spacing: -0.03em;
+    margin-bottom: 0.6em;
   }
 
   p {
-    margin-top: 1rem; // reduce margin top due to social icons' padding
+    margin-top: 0rem; // reduce margin top due to social icons' padding
     color: #111;
-    max-width: 25em;
+    max-width: 30em;
 
   }
 }
@@ -82,4 +84,11 @@ main {
   justify-content: flex-start;
   padding-top: 1rem;
   margin-left: -0.8rem;  // offset to negate icon's padding to align with text above
+}
+
+.introduction-icons, .hobbies-icons {
+  justify-content: flex-start;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  //margin-left: -0.8rem;  // offset to negate icon's padding to align with text above
 }

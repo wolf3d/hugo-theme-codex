@@ -1,0 +1,12 @@
+{{ $currentPage := . }}
+{{ $icons := .Site.Params.iconOrder | default (slice "music" "instrument" "languages" "book") }}
+
+{{ range $icons }}
+<div class="hobbies-icons">
+  {{ $icon := anchorize . }}
+  {{ if isset $currentPage.Site.Params $icon }}
+  <div class="hobbies-icons__icon" style="background-image: url('{{print "svg/" $icon ".svg" | absURL}}')"></div>
+  <p>{{ index $currentPage.Site.Params $icon }}</p>
+  {{ end }}
+  </div>
+{{ end }}
