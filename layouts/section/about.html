@@ -1,21 +1,17 @@
 {{ define "styles" }}
-    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/about.scss" "dest" "css/about.css") }}    
+    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/about.scss" "dest" "css/about.css") }}
 {{ end }}
 
 {{ define "main" }}
 
 <div class="splash-container">
   <div class="splash-b">
-
     <h2>{{ .Params.heading }}</h2>
     {{ partial "introduction-icons.html" .}}
     <!-- Replace MEEEEEE -->
     {{ partial "hobbies-icons.html" .}}
     <!-- {{ .Content }} -->
-
-
     {{ partial "social-icons.html" .}}
-
   </div>
 </div>
 
